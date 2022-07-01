@@ -1,0 +1,148 @@
+@charset "ISO-8859-1";
+
+*{
+	padding: 0; margin: 0;
+}
+
+body {
+	background: #616A6B; background-size: cover; padding: 0;
+	margin: 0; font-family: 'Bree Serif', serif;
+}
+
+/*****************header******************/
+.header{
+	display: flex; width: 100%; background-image: url('../img/prubaner.jpg'); box-shadow: 5px 5px 18px black;
+	position: relative; top: 0; color: rgb(0, 128, 255); height: 165px; 
+}
+.Hprimer{
+	width: 15%; padding-top: 0; padding-left: 50px; padding-bottom: 0;
+}
+.Hprimer .titulo{
+	font-size: 80px; margin-bottom: -15px;
+}
+.Hprimer .titulo a{
+	text-decoration:none;color: rgb(0, 128, 255);
+}
+.Hprimer .subtitulo{
+	font-size: 40px;
+}
+
+.parair{
+	width: 40%;font-size: 18px;display: flex;padding-top:120px;
+}
+.parair a{
+	text-decoration: none;display: block;margin-left: 40px;color:rgb(0, 128, 255);
+}
+.parair a:hover, .select{
+	border-bottom: 2px solid rgb(0, 128, 255);
+}
+
+.Hsegun{
+	width: 20%; display: flex;
+}
+.barrabus{
+	padding: 0; font-size: 15px; margin-top: auto; margin-bottom: auto; padding: 5px;
+	width: 90%; margin-left: 5px; outline: none; border-radius: 5px; border: 2px solid rgb(0, 128, 255);
+}
+.icon-buscar{
+	font-size: 25px; margin-top: auto; margin-bottom: auto; display: block; margin-left: 10px;
+	color: white; cursor: pointer;
+}
+.buscarb{
+	margin-top:70px; margin-bottom:70px; border:none; background: transparent;
+}
+
+.Hter{
+	width: 20%; display: flex;
+}
+.icon-user{
+	font-size: 25px; margin-top: auto; margin-bottom: auto; display: block; margin-left: 40px; color: white;
+}
+.elusuario{
+	font-size: 20px; margin-top: auto; margin-bottom: auto; margin-left: 10px;
+}
+.logout{
+	width: 30px; display: block; margin-left: 30px; margin-top:8px; 
+}
+.iconoscabe{
+	width: 30px; display: block;cursor: pointer;
+}
+
+/********************contenido de carrito***********************/
+
+#carritocont{
+	width: 70%;margin: 50px auto;
+}
+.cabecarrito{
+	padding: 20px 0;
+}
+
+
+.table img{
+	width: 60px;display: block;margin: auto;
+}
+
+.secemail{
+	width: 100%;display: flex;margin: 40px 0;justify-content: space-between;	
+}
+.total{
+	width: 35%;
+} 
+.total h4{
+	font-size: 20px;text-align: center;color: white;width: 100%;padding: 10px 0;background-color: rgb(0, 128, 255);
+	border-radius: 3px;
+}
+.total ul{
+	display: block;width: 100%;justify-content: space-between;margin: auto;
+}
+.total ul li{
+	list-style: none;color: gray;display: flex;width: 100%;justify-content: space-between;margin: auto;
+}
+.libl{
+	font-weight: bolder;padding: 10px 0;border-top: 1px solid gray;border-bottom: 1px solid gray;
+}
+.form{
+	width: 60%;
+}
+.controls{
+	margin: 10px 0;
+}
+button{
+	padding: 10px 30px;
+}
+
+/**************************footer***********/
+
+.footer{
+	width: 100%; background: #3F4141; display: flex; padding-top: 20px; padding-bottom: 20px;
+}
+.logoFoot{
+	width: 200px; margin-top: 10px; display: block; margin-left: auto; margin-right: auto;
+}
+.sepFoo{
+	width: 33.33%; text-align: center;
+}
+.ulia{
+	text-decoration: none; color: white;
+	width: 35%; display: block; margin-left: auto; margin-right: auto;
+}
+.ulia a{
+	display: block; flex-direction: column; color: rgba(0,0,0,0.5); text-decoration: none; font-size: 17px;
+	text-align: justify;
+}
+.iconos{
+	justify-content: space-between; display: flex; margin: 0 35%;
+}
+#fa{
+	text-decoration: none; font-size: 30px; color: rgba(0,0,0,0.5); display: block;
+}
+/**hover*/
+.ulia a:hover, #fa:hover{
+	color: white;
+}
+.h2foo{
+	font-size: 30px; text-align: center; margin-bottom: 15px; color: white;
+}
+.credit{
+	background: #2E2F2F; margin: 0; text-align: center; padding: 10px 0; color:white;
+}

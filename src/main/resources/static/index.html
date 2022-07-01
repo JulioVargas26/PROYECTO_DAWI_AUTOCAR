@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>AUTOCAR</title>
+	<meta http-equiv="Content-Type" content="text/html" ; charset="UTF-8" />
+	<link rel="icon" type="image/png" sizes="40x32" href="logoo.ico">
+
+	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+	<link href="https://file.myfontastic.com/NU5xnQV9U64AAcXeyiibJ7/icons.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilosPri.css">
+</head>
+
+
+
+<body>
+	<div id="principal">
+		<header class="header">
+			<section class="Hprimer">
+				<h1 class="titulo">
+					<a href="/index/principal">AutoCAR</a>
+				</h1>
+				<h2 class="subtitulo">Principal</h2>
+			</section>
+			<section class="parair">
+				<a href="/index/principal" style="margin-left: 250px;" class="select"><abbr title="Principal"><img
+							class="iconoscabe" src="/img/icon/home.png" alt=""></abbr></a><a
+					href="/producto/listar"><abbr title="Productos"><img class="iconoscabe" style="cursor: pointer;"
+							src="/img/icon/product.png" alt=""></abbr></a><a href="/producto/carrito"><abbr
+						title="Carrito de Compras"><img class="iconoscabe" style="cursor: pointer;"
+							src="/img/icon/carrito.png" alt=""></abbr></a>
+					<a href="/producto/mantenimiento"><img class="iconoscabe" style="cursor: pointer;"
+							src="/img/icon/mante.png" alt=""></a>
+			</section>
+			<section class="Hsegun">
+				<input type="search" placeholder="Buscar producto" class="barrabus">
+				<button class="buscarb">
+					<p class="icon-buscar"></p>
+				</button>
+
+			</section>
+			<section class="Hter">
+				<p class="icon-user"></p>
+				<p class="elusuario">
+					<c:if test="">
+						<strong></strong>
+					</c:if>
+					<c:if test="">
+						<p style="margin-top: 55px;">Hola</p>
+						<p>
+							<a style="display: block; font-size: 17px; margin-top: 75px; margin-left: -35px; text-decoration: none; color: rgb(0, 128, 255);"
+								href="/user/login">Iniciar sesion</a>
+						</p>
+					</c:if>
+				</p>
+
+
+				<a href="usuSer" class="logout"><abbr title="Cerrar Sesión"><img class="logout"
+							src="/img/icon/logoout.png" alt=""></abbr>
+				</a>
+			</section>
+		</header>
+
+
+		<div class="baner">
+			<img th:src="@{/img/baner/banneraros.png}" alt="" id="banerimg">
+		</div>
+
+
+		<div class="ofertas">
+			<div class="ofersec">
+				<div class="off">
+					<a href=""><img class="ofimg" src="img/ofertas/oferta1.jpg" alt="#"></a>
+				</div>
+				<div class="off">
+					<a href=""><img class="ofimg" src="img/ofertas/oferta2.png" alt="#"></a>
+				</div>
+			</div>
+			<div class="ofersec">
+				<div class="off">
+					<a href=""><img class="ofimg" src="img/ofertas/oferta3.jpg" alt="#"></a>
+				</div>
+				<div class="off">
+					<a href=""><img class="ofimg" src="img/ofertas/oferta4.png" alt="#"></a>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<footer class="footer">
+			<div class="sepFoo">
+				<a href="/index/principal"><img class="logoFoot" alt="#" src="img/logoo.png"></a>
+			</div>
+			<div class="sepFoo">
+				<h2 class="h2foo">Navegación</h2>
+				<ul class="ulia" style="list-style: none">
+					<li><a href="/producto/carrito">Carrito de compras</a></li>
+					<li><a href="/user/login">Iniciar sesión</a></li>
+					<li><a href="">Productos</a></li>
+				</ul>
+			</div>
+			<div class="sepFoo">
+				<h2 class="h2foo">Contáctanos</h2>
+				<div class="iconos">
+					<a id="fa" class="icon-facebook" href="" rel=""></a> <a id="fa" class="icon-email" href=""
+						rel=""></a> <a id="fa" class="icon-what" href="" rel=""></a>
+				</div>
+			</div>
+		</footer>
+		<div class="credit">
+			<p class="pcredit">AutoCar © 2021 . Todos Los Derechos Reservados</p>
+		</div>
+	</div>
+</body>
+
+
+
+<script src="js/jsprincipal.js"></script>
+
+
+</html>

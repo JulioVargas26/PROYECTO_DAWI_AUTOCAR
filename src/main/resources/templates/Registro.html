@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Registro-AUTOCAR</title>
+	<link href="/css/estilosRegistro.css" rel="stylesheet">
+	<link rel="icon" type="image/png" sizes="40x32" href="../static/img/logoo.ico">
+	<!-- 	GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div id="contenedor">
+		<main>
+			<section class="formulario" >
+				<form action="/usuario/crear" method="post" th:object="${usuarioC}">
+					<h2 class="tituform">Registrar</h2>
+					<div class="input">
+						<label for="InputNombre">Nombre:</label> <input type="text" class="InputNombre" id="txtnombre"
+							placeholder="Ingrese Nombre" name="nombre" field="*{nombre}">
+					</div>
+
+					<div class="input">
+						<label for="InputApellido">Apellido:</label> <input type="text" class="InputApellido"
+							id="txtapellido" placeholder="Ingrese Apellido" name="apellido" field="*{apellido}">
+					</div>
+
+					<div class="input">
+						<label for="InputCorreo">Correo Electronico:</label> <input type="email" class="InputCorreo"
+							id="txtcorreo" placeholder="Ingrese Correo" name="correo" field="*{correo}">
+					</div>
+
+					<div class="input">
+						<label for="InputPassword">Contraseña:</label> <input type="password" class="InputPassword"
+							id="txtclave" placeholder="Ingrese Contraseña" name="clave" field="*{clave}">
+					</div>
+
+					<div th:if="${MensajeExito} != null" class="alert alert-success" role="alert"
+						th:text="${MensajeExito}"></div>
+					<div th:if="${MensajeError} != null" class="alert alert-danger" role="alert"
+						th:text="${MensajeError}"></div>
+
+					<div style="display: flex;margin-top: 30px;">
+						<button type="submit" name="opcion" class="boton">Registrar</button>
+						<p><a class="botreg" href="/user/login">Login</a></p>
+					</div>
+
+				</form>
+			</section>
+		</main>
+	</div>
+
+</body>
+
+</html>

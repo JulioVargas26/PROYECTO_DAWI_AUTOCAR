@@ -1,0 +1,155 @@
+@charset "ISO-8859-1";
+
+*{
+	padding: 0; margin: 0;
+}
+
+body {
+	background: #616A6B; background-size: cover; padding: 0;
+	margin: 0; font-family: 'Bree Serif', serif;
+}
+
+/*****************header******************/
+.header{
+	display: flex; width: 100%; background: url('/img/prubaner.jpg') fixed; box-shadow: 5px 5px 18px black;
+	position: fixed; top: 0; color: rgb(0, 128, 255); height: 165px; 
+}
+.Hprimer{
+	width: 15%; padding-top: 0; padding-left: 50px; padding-bottom: 0;
+}
+.Hprimer .titulo{
+	font-size: 80px; margin-bottom: -15px;
+}
+.Hprimer .titulo a{
+	text-decoration:none;color: rgb(0, 128, 255);
+}
+.Hprimer .subtitulo{
+	font-size: 40px;
+}
+
+.parair{
+	width: 40%;font-size: 18px;display: flex;padding-top:120px;
+}
+.parair a{
+	text-decoration: none;display: block;margin-left: 40px;color:rgb(0, 128, 255);
+}
+.parair a:hover, .select{
+	border-bottom: 2px solid rgb(0, 128, 255);
+}
+
+.Hsegun{
+	width: 20%; display: flex;
+}
+.barrabus{
+	padding: 0; font-size: 15px; margin-top: auto; margin-bottom: auto; padding: 5px;
+	width: 90%; margin-left: 5px; outline: none; border-radius: 5px; border: 2px solid rgb(0, 128, 255);
+}
+.icon-buscar{
+	font-size: 25px; margin-top: auto; margin-bottom: auto; display: block; margin-left: 10px;
+	color: white; cursor: pointer;
+}
+.buscarb{
+	margin-top:70px; margin-bottom:70px; border:none; background: transparent;
+}
+
+.Hter{
+	width: 20%; display: flex;
+}
+.icon-user{
+	font-size: 25px; margin-top: auto; margin-bottom: auto; display: block; margin-left: 40px; color: white;
+}
+.elusuario{
+	font-size: 20px; margin-top: auto; margin-bottom: auto; margin-left: 10px;
+}
+.logout{
+	width: 30px; display: block; margin-left: 30px; margin-top:8px; 
+}
+.iconoscabe{
+	width: 30px; display: block;cursor: pointer;
+}
+/**************** seccion de productos ***********/
+
+.containerProd{
+	width: 100%; margin-top: 165px; background: #313132; padding: 70px 0;display: flex;
+	flex-direction: column;
+}
+
+.contenreport{
+	display: flex;width: 70%;margin: 20px auto;
+}
+.crepor, .cgraf{
+	padding: 10px 20px;display: flex;
+}
+.contenreport h3{
+	font-size: 15px;padding: 10px 10px 0 10px; color:white;
+}
+
+.conttablee{
+	width: 70%;margin: auto;display: block;
+}
+.row{
+	width:100%;text-align: center;
+	}
+.row table{
+	width: 100%;
+}
+.row button{
+	color: white;
+}
+
+/*NO TABLE*/
+/*.col {
+    padding: 10px 0; width: 300px; border: 2px solid rgb(0, 128, 255); border-radius: 3px;
+}
+.imgProd {
+	width: 280px; height: 280px; display: block; margin-left: auto; margin-right: auto;
+	margin-bottom: 15px;cursor:pointer;border:none;
+}
+.h2Prod, .pProd{
+	margin-left: 30px; color:rgb(0, 128, 255);
+}
+.botonProd{
+	display: block; margin-left: auto; margin-right: auto; font-size: 17px; padding: 7px 15px;
+	margin-top: 17px; margin-bottom: 5px; Border:none; cursor: pointer; Color: black;
+    background: white; border-radius: 5px; font-family: 'Bree Serif', serif;
+}
+.botonProd:hover{
+	background: rgb(0, 128, 255);color:white;
+}*/
+
+/**************************footer***********/
+
+.footer{
+	width: 100%; background: #3F4141; display: flex; padding-top: 20px; padding-bottom: 20px;
+}
+.logoFoot{
+	width: 200px; margin-top: 10px; display: block; margin-left: auto; margin-right: auto;
+}
+.sepFoo{
+	width: 33.33%; text-align: center;
+}
+.ulia{
+	text-decoration: none; color: white;
+	width: 35%; display: block; margin-left: auto; margin-right: auto;
+}
+.ulia a{
+	display: block; flex-direction: column; color: rgba(0,0,0,0.5); text-decoration: none; font-size: 17px;
+	text-align: justify;
+}
+.iconos{
+	justify-content: space-between; display: flex; margin: 0 35%;
+}
+#fa{
+	text-decoration: none; font-size: 30px; color: rgba(0,0,0,0.5); display: block;
+}
+/**hover*/
+.ulia a:hover, #fa:hover{
+	color: white;
+}
+.h2foo{
+	font-size: 30px; text-align: center; margin-bottom: 15px; color: white;
+}
+.credit{
+	background: #2E2F2F; margin: 0; text-align: center; padding: 10px 0; color:white;
+}
+

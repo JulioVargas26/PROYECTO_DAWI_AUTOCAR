@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>AUTOCAR</title>
+	<meta http-equiv="Content-Type" content="text/html" ; charset="UTF-8" />
+	<link rel="icon" type="image/png" sizes="40x32" href="/img/logoo.ico">
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<style>
+	.logoFoot {
+		width: 100px;
+		margin-top: 0;
+		display: block;
+	}
+
+	form {
+		width: 30%;
+		display: block;
+		margin: auto;
+	}
+</style>
+
+<body>
+	<div id="contenedor" style="display: block;" class="" >
+
+		<header style="background: #424949; width: 100%; padding: 20px 0; font-size: 20px;display: flex;">
+			<img class="logoFoot" alt="#" src="../img/logoo.png">
+			<ul>
+				<li style="list-style: none;"><a href="" class="logout"><img style="width: 40px" class="logout"
+							src="../img/icon/home.png" alt=""></a><a style="text-decoration: none; color: white;"
+						href="/producto/listar">Productos</a></li>
+			</ul>
+			<ul>
+				<li style="list-style: none;"><a href="usuSer" class="logout"><img style="width: 40px" class="logout"
+							src="../img/icon/logoout.png" alt=""></a><a style="text-decoration: none; color: white;"
+						href="login.jsp">Cerrar Sesión</a></li>
+			</ul>
+		</header>
+
+		<main style="width: 100%; display: block;">
+			<section style="width: 100%; float: left; background-color: white; padding: 30px 0">
+				<h1 style="text-align: center; font-size: 35px;padding-bottom: 20px;">Mantenimiento
+					de Productos</h1>
+
+
+				<form action="/producto/grabarmante" method="post" th:object="${productos}">
+					<div class="form-group">
+						<label for="inputCodigo">Código del producto:</label> <input type="text" id="inputCodigo"
+							placeholder="Ingrese código" class="form-control" th:field="*{idprod}">
+					</div>
+					<div class="form-group">
+						<label for="inputNombre">Nombre:</label> <input type="text" id="inputNombre"
+							placeholder="Ingrese nombre" class="form-control" th:field="*{nomprod}">
+					</div>
+
+
+					<div class="form-group">
+						<label for="inputDescripcion">Descripción:</label> <input type="text"
+							placeholder="Ingrese descripción" class="form-control" th:field="*{descripcion}">
+					</div>
+					<div class="form-group">
+						<label for="InputCodcli">Proveedor:</label>
+
+						<select id="inputProv" class="form-control" th:field="*{idproveedor}">
+							<option value="-1">Seleccionar</option>
+							<option th:each="p : ${lstProveedores}" th:value="${p.idproveedor}" th:text="${p.nombre}">
+							</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label for="InputEmail">Precio:</label> <input th:field="*{precio}" type="number"
+							placeholder="0.00" class="form-control">
+					</div>
+
+
+					<div class="form-group">
+						<label for="InputCantidad">Cantidad:</label> <input th:field="*{cantidad}" type="number"
+							placeholder="0" class="form-control">
+					</div>
+
+					<br />
+					<div th:if="${success} != null" class="alert-success" role="alert" th:text="${success}"
+						style="text-align: center;"></div>
+					<div th:if="${error} != null" class="alert-danger" role="alert" th:text="${error}" style="text-align: center;"></div>
+
+					<div style=" display: block; margin-left: auto; margin-right: auto; width: 65%; margin-top: 60px;">
+						<button type="submit" class="btn btn-primary">Registrar</button>
+						<button type="submit" class="btn btn-primary">Actualizar</button>
+						<a href="" class="btn btn-danger">Eliminar</a>
+					</div>
+
+				</form>
+			</section>
+
+			<!--<div th:if="${alter} != null" class="alert alert-success" role="alert" th:text="${alter}"></div>
+			<div th:if="${erroralter} != null" class="alert alert-danger" role="alert" th:text="${erroralter}"></div>-->
+		</main>
+
+
+
+	</div>
+
+</body>
+
+</html>
